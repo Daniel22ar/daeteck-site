@@ -1,0 +1,113 @@
+/* CoberturaPage.css */
+
+.cobertura-page__main-section {
+  padding: 60px 20px;
+  background-color: #f0f8ff;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.cobertura-page__container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.cobertura-page__section-title {
+  font-size: 2.5em;
+  color: #0056b3;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+.cobertura-page__intro-text,
+.cobertura-page__instruction-text,
+.cobertura-page__contact-prompt {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+/* Nueva sección para el área del mapa interactivo y el buscador */
+.cobertura-page__map-interactive-area {
+  position: relative;
+  width: 100%;
+  height: 500px; /* Altura fija para el mapa. Puedes ajustar según necesites. */
+  margin-bottom: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  overflow: hidden; /* Asegura que el contenido del mapa no se salga */
+}
+
+.cobertura-page__map-container {
+  width: 100%;
+  height: 100%;
+}
+
+.cobertura-page__search-input {
+  position: absolute;
+  top: 20px; /* Ajusta la posición vertical del input */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%; /* Ancho del input */
+  max-width: 400px; /* Ancho máximo del input */
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  font-size: 1em;
+  z-index: 10; /* Asegura que el input esté por encima del mapa */
+  outline: none; /* Quita el borde de enfoque por defecto */
+}
+
+.cobertura-page__search-input:focus {
+  border-color: #007bff; /* Borde azul al enfocar */
+}
+
+.cobertura-page__check-area {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  margin-bottom: 40px;
+}
+
+.cobertura-page__check-area h3 {
+  color: #007bff;
+  margin-bottom: 20px;
+  font-size: 1.6em;
+}
+
+.cobertura-page__contact-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cobertura-page__contact-link:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+  .cobertura-page__section-title {
+    font-size: 2em;
+  }
+  .cobertura-page__intro-text,
+  .cobertura-page__instruction-text,
+  .cobertura-page__contact-prompt {
+    font-size: 1em;
+  }
+  .cobertura-page__map-interactive-area {
+    height: 400px; /* Ajusta la altura del mapa para móviles */
+  }
+  .cobertura-page__search-input {
+    width: 95%; /* Ajusta el ancho del input en móviles */
+    top: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cobertura-page__map-interactive-area {
+    height: 300px; /* Aún más pequeña en pantallas muy pequeñas */
+  }
+}

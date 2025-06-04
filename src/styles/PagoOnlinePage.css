@@ -1,0 +1,175 @@
+/* PaymentsPage.css */
+
+.payments-page__main-section {
+  padding: 60px 20px;
+  background-color: #f0f4f8; /* Un fondo suave para la sección */
+  text-align: center;
+  margin-top: 50px; /* Para bajar la sección si es necesario */
+}
+
+.payments-page__container {
+  max-width: 700px; /* Un poco más estrecho para un formulario central */
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.payments-page__section-title {
+  font-size: 2.5em;
+  color: #0056b3; /* Azul primario */
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.payments-page__intro-text {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.payments-page__form {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.payments-page__form-group {
+  margin-bottom: 25px;
+}
+
+.payments-page__label {
+  display: block;
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.payments-page__input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1.1em;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.payments-page__input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.15);
+}
+
+.payments-page__input:disabled {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+}
+
+.payments-page__submit-button {
+  background-color: #28a745; /* Verde para la acción principal */
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+}
+
+.payments-page__submit-button:hover:not(:disabled) {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+.payments-page__submit-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.payments-page__status-message {
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.payments-page__status-message.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.payments-page__status-message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.payments-page__info-section {
+  margin-top: 50px;
+  padding-top: 30px;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+
+.payments-page__info-section h3 {
+  color: #007bff;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+.payments-page__info-section p {
+  color: #666;
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.payments-page__info-section ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.payments-page__info-section li {
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.payments-page__info-section a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.payments-page__info-section a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+  .payments-page__section-title {
+    font-size: 2em;
+  }
+  .payments-page__container {
+    padding: 30px 20px;
+  }
+  .payments-page__input,
+  .payments-page__submit-button {
+    font-size: 1em;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .payments-page__section-title {
+    font-size: 1.8em;
+  }
+}
